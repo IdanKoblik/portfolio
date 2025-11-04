@@ -8,7 +8,7 @@ export interface Experience {
 }
 
 export const portfolioConfig = {
-  name: 'Idan Kobik',
+  name: 'Idan Koblik',
   title: 'Backend Developer & Devops',
   bio: 'Backend developer with 3 years of experience in software development. Skilled in Linux and system architecture, with a strong focus on designing scalable and efficient backend systems.',
   experience: '3 years',

@@ -62,7 +62,7 @@ export const portfolioConfig = {
   cv: [
     {
       language: 'IdanKoblik',
-      url: '/cv/cv-en.pdf',
+      url: 'https://docs.google.com/document/d/1v6oBpxpeCEHZD526f9fAXt_mWIaGFa27zSV4djwcdZg/edit?usp=sharing',
       flag: '📓',
     },
   ],

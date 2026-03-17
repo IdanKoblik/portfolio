@@ -26,6 +26,7 @@ jobs:
       - run: bun run build
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          VITE_BASE: /portfolio/
 
       - uses: actions/upload-pages-artifact@v3
         with:

@@ -1,4 +1,5 @@
 import { Star, GitFork, ExternalLink } from "lucide-react";
+import pinnedRepos from "@/data/pinned-repos.json";
 
 interface Project {
   name: string;
@@ -9,20 +10,14 @@ interface Project {
   forks: number;
 }
 
-const projects: Project[] = [
-  { name: "whisper", description: "SMS gateway", url: "https://github.com/IdanKoblik/whisper", language: "Go", stars: 5, forks: 0 },
-  { name: "artifactor", description: "Package version manager service", url: "https://github.com/IdanKoblik/artifactor", language: "Go", stars: 0, forks: 0 },
-  { name: "oedipus", description: "Linux CLI text editor", url: "https://github.com/IdanKoblik/oedipus", language: "C++", stars: 0, forks: 0 },
-  { name: "paperclip", description: "Wayland clipboard", url: "https://github.com/IdanKoblik/paperclip", language: "C", stars: 0, forks: 0 },
-  { name: "aoc-2025", description: "Advent of Code 2025", url: "https://github.com/IdanKoblik/aoc-2025", language: "Zig", stars: 1, forks: 0 },
-  { name: "headscale", description: "Self-hosted Tailscale control server (fork)", url: "https://github.com/IdanKoblik/headscale", language: "Go", stars: 0, forks: 0 },
-];
-
 const langColors: Record<string, string> = {
   Go: "bg-primary",
   "C++": "bg-pink-500",
   C: "bg-gray-400",
-  Zig: "bg-amber-500",
+  TypeScript: "bg-blue-500",
+  JavaScript: "bg-yellow-400",
+  Python: "bg-green-500",
+  Rust: "bg-orange-500",
 };
 
 const ProjectCard = ({ project }: { project: Project }) => (
@@ -75,7 +70,7 @@ const Projects = () => (
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        {projects.map((project) => (
+        {(pinnedRepos as Project[]).map((project) => (
           <ProjectCard key={project.name} project={project} />
         ))}
       </div>

@@ -9,6 +9,7 @@ lerna-debug.log*
 
 node_modules
 dist
+src/data/pinned-repos.json
 dist-ssr
 *.local
 

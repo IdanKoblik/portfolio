@@ -4,8 +4,8 @@ const skills = [
   { icon: Server, label: "Backend Systems" },
   { icon: Container, label: "Docker" },
   { icon: Terminal, label: "Linux" },
-  { icon: Database, label: "PostgreSQL / MongoDB" },
-  { icon: Code2, label: "Java · Kotlin · Go · C/C++" },
+  { icon: Database, label: "PostgreSQL, Sqlite, MongoDB" },
+  { icon: Code2, label: "Java · Kotlin · Go · C/C++ · Python" },
   { icon: GitBranch, label: "CI/CD & DevOps" },
 ];
 
@@ -28,17 +28,13 @@ const About = () => (
             <span className="text-primary">Go</span>,{" "}
             <span className="text-primary">C/C++</span>,{" "}
             <span className="text-primary">Java/Kotlin</span>, and{" "}
-            <span className="text-primary">Zig</span> — writing CLI tools,
+            <span className="text-primary">Python</span>, and{" "}
             microservices, and low-level utilities that power backend workflows.
           </p>
           <p>
             I'm passionate about Linux environments, containerization with Docker,
             and designing systems that are easy to deploy and maintain. Most of my
             projects live on GitHub and are open source.
-          </p>
-          <p>
-            When I'm not coding, I'm exploring new languages, contributing to open
-            source, or optimizing server configurations.
           </p>
         </div>
 

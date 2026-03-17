@@ -6,7 +6,7 @@ const Hero = () => {
   const [copied, setCopied] = useState(false);
 
   const copyEmail = () => {
-    navigator.clipboard.writeText("idankob@gmail.com");
+    navigator.clipboard.writeText("me@idank.dev");
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -24,8 +24,7 @@ const Hero = () => {
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl font-body leading-relaxed">
-            Backend & systems developer. Building tools with Go, C/C++, Zig, and more. 
-            Passionate about low-level systems, CLI tools, and infrastructure.
+            Backend developer.
           </p>
 
           <div className="flex flex-wrap items-center gap-3 mb-10">
@@ -47,6 +46,13 @@ const Hero = () => {
                 LinkedIn
               </Button>
             </a>
+
+            <a href="https://docs.google.com/document/d/1v6oBpxpeCEHZD526f9fAXt_mWIaGFa27zSV4djwcdZg/edit?tab=t.0" target="_blank" rel="noopener noreferrer">
+              <Button variant="outline" className="font-display text-sm">
+                <Linkedin size={16} />
+                Resume
+              </Button>
+            </a>
           </div>
 
           <div className="terminal-block rounded-lg p-4 text-sm max-w-md">
@@ -55,9 +61,8 @@ const Hero = () => {
               <span className="text-muted-foreground">contact.sh</span>
             </div>
             <div className="space-y-1 text-muted-foreground">
-              <p><span className="text-primary">email</span>    = "idankob@gmail.com"</p>
-              <p><span className="text-primary">alt</span>      = "me@idank.dev"</p>
-              <p><span className="text-primary">discord</span>  = <a href="https://discord.com/users/429212281914785793" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">"IdanK"</a></p>
+              <p><span className="text-primary">email</span>    = "me@idank.dev"</p>
+              <p><span className="text-primary">alt</span>      = "idankob@gmail.com"</p>
             </div>
           </div>
         </div>

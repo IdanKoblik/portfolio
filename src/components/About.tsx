@@ -20,8 +20,8 @@ const About = () => (
       </p>
 
       <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
-        {/* Bio — markdown-style */}
-        <div className="lg:col-span-3 terminal-block rounded-lg p-6 text-sm leading-relaxed space-y-4 text-muted-foreground font-body">
+        {/* Bio */}
+        <div className="lg:col-span-3 space-y-4 text-base leading-relaxed text-muted-foreground font-body">
           <p>
             I'm a <span className="text-foreground font-medium">backend & systems developer</span> focused on building
             reliable, performant infrastructure. I work primarily with{" "}
